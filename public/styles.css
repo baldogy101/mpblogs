@@ -71,8 +71,6 @@ form{
 }
 
 .blog-body{
-    border: 1px solid black;
-    box-shadow: 5px 10px #888888;
     margin: 0px auto;
     padding: 10px 10px;
 }
@@ -81,3 +79,9 @@ form{
     padding: 20px;
     min-height: 600px;
 }
+
+/* public/css/styles.css */
+.preserve-format {
+    white-space: pre-line;
+  }
+  

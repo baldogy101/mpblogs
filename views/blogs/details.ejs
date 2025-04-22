@@ -8,12 +8,12 @@
     <div class="blogs-container">
         <div class="details content">
             <h2><%= blog.title %></h2>
-            <p class="blog-body"><%= blog.body %></p>
+            <p class="blog-body preserve-format"><%- blog.body %></p>
             <p>Author: <%= blog.author ? blog.author.username: 'Unknown Author' %></p>
         </div>
         <% if (user && blog.author && blog.author._id.toString() === user._id.toString()) { %>
             <button id="deleteBtn" data-id="<%= blog._id %>">
-                <img src="https://img.icons8.com/?size=25&id=68138&format=png&color=000000" alt="Delete Blog" />
+                <img src="https://img.icons8.com/?size=25&id=qdsTtJN74Lai&format=png&color=000000" alt="Delete Blog" />
             </button>        
             <a href="/blogs/<%= blog._id %>/edit" id="editbutton">Edit Blog</a>
         <% } %>

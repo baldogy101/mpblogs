@@ -12,11 +12,14 @@
             <label for="snippet">Description</label>
             <input type="text" name="snippet" required>
             <label for="body">Body</label>
-            <textarea rows="25" name="body" id="body"></textarea>
+            <div id="body" style="height: 300px;"></div>
             <button>create</button>
         </form>
     </div>
     
-<%- include('../partials/footer') %>
+    <%- include('../partials/footer') %>
+    <script src="/vendor/quill/quill.js"></script>
+    <script src="/js/quill.js"></script>
+
 </body>
 </html>

@@ -5,16 +5,17 @@
 
 <body>
     <%- include('../partials/nav') %>
-
-    <form action="/blogs/create" method="POST">
-        <label for="title">Title</label>
-        <input type="text" name="title" required>
-        <label for="snippet">Description</label>
-        <input type="text" name="snippet" required>
-        <label for="body">Body</label>
-        <textarea name="body" id="body"></textarea>
-        <button>create</button>
-    </form>
+    <div class="blogs-container">
+        <form action="/blogs/create" method="POST">
+            <label for="title">Title</label>
+            <input type="text" name="title" required>
+            <label for="snippet">Description</label>
+            <input type="text" name="snippet" required>
+            <label for="body">Body</label>
+            <textarea rows="25" name="body" id="body"></textarea>
+            <button>create</button>
+        </form>
+    </div>
     
 <%- include('../partials/footer') %>
 </body>

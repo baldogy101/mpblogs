@@ -1,0 +1,19 @@
+<nav>
+    <div class="site-title">
+        <a href="/"><h1>MaderPader Site</h1></a>
+        <a href="/">home</a>
+        <a href="/blogs">blogs</a>
+    </div>
+
+    <ul>
+        <% if (user) { %>
+            <li>Hi, <%= user.username %></li>
+            <li><a href="/blogs/create">new blogs</a></li>
+            <li><a href="/logout">logout</a></li>
+        <% } else { %>
+            <li><a href="/login">login</a></li>
+            <li><a href="/signup">signup</a></li>
+            <% } %>
+
+    </ul>
+</nav>

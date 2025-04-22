@@ -1,0 +1,76 @@
+body{
+}
+
+nav{
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav ul, nav li{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    min-height: 430px;
+}
+
+footer{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.blogs-container {
+    background-color: azure;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Each blog post box */
+.blog-indv {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Optional: Add hover effect */
+.blog-indv:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.blog-indv h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+}
+
+.blog-indv p {
+    margin: 0;
+    font-size: 1rem;
+    color: #444;
+}
+
+form{
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+.blog-body{
+    border: 1px solid black;
+    box-shadow: 5px 10px #888888;
+}

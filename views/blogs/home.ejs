@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head') %>
+
+<body>
+    <%- include('../partials/nav') %>
+    <div class="blogs-container">
+        <h1>All Blogs</h1>
+        <% if (blogs.length > 0) { %>
+            <% blogs.forEach(blog => { %>
+                <div class="blog-indv">
+                    <a href="/blogs/<%= blog._id %>">
+                        <h2><%= blog.title %></h2>
+                        <p><%= blog.snippet %></p><br>
+                        <p>Author: <%= blog.author ? blog.author.username: 'Unknown Author' %></p>
+                    </a>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <p>No blogs available</p>
+        <% } %>
+    </div>
+<%- include('../partials/footer') %>
+</body>
+</html>

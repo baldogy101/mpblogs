@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head') %>
+
+<body>
+    <%- include('../partials/nav') %>
+
+    <form data-action="/signup" data-redirect="/blogs">
+        <h2>Sign up</h2>
+        <label for="username">Username</label>
+        <input type="text" name="username" required>
+        <div class="username error"></div>
+        <label for="email">Email</label>
+        <input type="text" name="email" required>
+        <div class="email error"></div>
+        <label for="password">Password</label>
+        <input type="password" name="password" required>
+        <div class="password error"></div>
+        <button type="submit">Sign up</button>
+    </form>
+    
+<%- include('../partials/footer') %>
+
+<script src="/js/form-handler.js"></script>
+
+</body>
+</html>
